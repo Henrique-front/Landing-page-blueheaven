@@ -1,0 +1,168 @@
+/* reponsivo */
+
+@media only screen and (max-width: 1200px) {
+  .listas-produtos,
+  .lista-depoimento,
+  .fotos-grade,
+  .sobre-grade,
+  .footer-container,
+  .mvv-grid,
+  .passeios-grid,
+  .wpp-box,
+  .atendimento-container,
+  .atendimento-container-trabalhe {
+    gap: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .listas-produtos,
+  .lista-depoimento,
+  .fotos-grade,
+  .sobre-grade,
+  .mvv-grid,
+  .passeios-grid,
+  .wpp-box,
+  .atendimento-container,
+  .atendimento-container-trabalhe {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+  }
+
+  .lista-depoimento {
+    gap: 2rem;
+  }
+
+  .lista-depoimento li {
+    grid-template-columns: 100px 50vw;
+    text-align: center;
+  }
+
+  .lista-depoimento h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .dados {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .listas-produtos li {
+    max-width: 388px;
+  }
+
+  .footer-itens + .footer-itens {
+    padding: 0;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .header ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .footer-container ul {
+    margin-bottom: 1rem;
+  }
+
+  .main {
+    background: url(../img/bg-home-mobile.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: left;
+  }
+
+  .main-passeios {
+    background: url(../img/bg-passeios-mobile.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  .main-sobre {
+    background: url(../img/bg-sobre-mobile.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  .main-contato {
+    background: url(../img/bg-contato-mobile.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  .main-trabalhe {
+    background: url(../img/bg-trabalhe-conosco-mobile.jpg) no-repeat center
+      center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .galeria-fotos img {
+    max-width: 455px;
+  }
+
+  .header-container img {
+    width: 170px;
+  }
+
+  .listas-produtos li {
+    max-width: 455px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .galeria-fotos img {
+    min-height: 250px;
+    max-width: 320px;
+  }
+
+  .listas-produtos li {
+    min-height: 250px;
+    max-width: 320px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .footer-itens h3 {
+    font-size: 1rem;
+  }
+
+  .footer-itens li {
+    font-size: 13px;
+  }
+
+  .social {
+    grid-template-columns: repeat(4, 1rem);
+  }
+
+  .social a {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .social a img {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .galeria .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .fotos-grade img {
+    width: 310px;
+    min-height: 200px;
+  }
+}
